@@ -1,0 +1,12 @@
+CREATE SEQUENCE known_cliffs_id_seq;
+SELECT setval('known_cliffs_id_seq', 3);
+CREATE TABLE known_cliffs
+(
+ id   INT NOT NULL,
+ name VARCHAR(40),
+ description VARCHAR(255),
+ PRIMARY KEY (ID)
+);
+INSERT INTO known_cliffs(id, name, description) VALUES (1, 'Giallo', '');
+INSERT INTO known_cliffs(id, name, description) VALUES (2, 'Rosso', '');
+INSERT INTO known_cliffs(id, name, description) VALUES (3, 'Bianco', '');
